@@ -32,7 +32,7 @@ public class gou extends JavaPlugin {
     @Override
     public void onEnable() {
         gouListener gouListener = new gouListener(this);
-        System.out.println("PluginEnable2333");
+        System.out.println("PluginEnable");
         getServer().getPluginManager().registerEvents(gouListener, this);
         this.getConfig().options().copyDefaults(true);
         saveConfig();
