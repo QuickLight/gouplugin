@@ -1,5 +1,6 @@
 package com.goucraft.Main;
 
+import com.goucraft.Command.gouCommand;
 import com.goucraft.Listener.gouListener;
 import net.milkbowl.vault.Vault;
 import net.milkbowl.vault.economy.Economy;
@@ -29,6 +30,7 @@ public class gou extends JavaPlugin {
         }
         return true;
     }
+
     @Override
     public void onEnable() {
         gouListener gouListener = new gouListener(this);
@@ -38,7 +40,6 @@ public class gou extends JavaPlugin {
         saveConfig();
         hookVault();
         gouListener.setEconomy(economy);
-
     }
 
     @Override
@@ -48,7 +49,12 @@ public class gou extends JavaPlugin {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        return super.onCommand(sender, command, label, args);
+        if (args.length != 0) {
+            if (args[0].equalsIgnoreCase("menu")) {
+                gouCommand.menu(sender, command, label, args);
+                return true;
+            }
+        }
+        return false;
     }
-
 }

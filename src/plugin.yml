@@ -6,6 +6,10 @@ commands:
   gou:
     description: 苟利国家生死以，岂因祸福避趋之这句话
     aliases: [g]
-    usage: /<command> help
+    usage: |
+      §1§m  §2§m  §3§m  §4§m  §5§m  §6§m  §7§m  §8§m  §9§m  §0§m  §6§l[§a§l苟§6§l]§0§m  §9§m  §8§m  §7§m  §6§m  §5§m  §4§m  §3§m  §2§m  §1§m
+      §a§l/<command> menu       §d§l-§e§l 打开苟菜单
+      §a§l/<command> admin     §d§l-§e§l 管理员指令
+      §a§l/<command> reload     §d§l-§e§l 插件重载
     permission: <plugin name>.gou
     permission-message: 权限丢失<permission>
