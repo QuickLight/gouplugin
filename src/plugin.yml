@@ -4,7 +4,7 @@ main: com.goucraft.Main.gou
 description: A plugin which makes for doge
 auther: 土豆&一凡
 website: http://www.goucraft.com
-prefix: 狗插件
+prefix: 苟插件
 commands:
   gou:
     description: 狗狗
