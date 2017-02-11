@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="gou">
+    <output-path>$USER_HOME$/Desktop/新建文件夹/plugins</output-path>
+    <root id="archive" name="gou.jar">
+      <element id="module-output" name="gouplugin" />
+    </root>
+  </artifact>
+</component>
